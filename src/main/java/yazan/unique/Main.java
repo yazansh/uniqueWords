@@ -14,7 +14,7 @@ public class Main {
 		Instant start = Instant.now(); // in order to compute elapsed time in milliseconds
 		
 
-		if(StringUtils.isBlank(args[0])){
+		if (args.length == 0 || StringUtils.isBlank(args[0])){
 			System.err.println("You must pass the folder path. It cannot be empty");
 			System.exit(1);			
 		}
